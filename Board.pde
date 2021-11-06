@@ -18,7 +18,7 @@ class Board {
     int cellWidth = this.bWidth/this.N_ROW_COL;
     int cellHeight = this.bHeight/this.N_ROW_COL;
     int colorToSet = 0;
-    color cellColors[] = {color(255), color(159, 114, 23)};
+    color cellColors[] = {color(#EFEDD1), color(#789656)};
     board = new Cell[N_ROW_COL][N_ROW_COL];
     for (int row = 0; row < this.N_ROW_COL; row++) {
       for (int col = 0; col < this.N_ROW_COL; col++) {
@@ -33,7 +33,7 @@ class Board {
     //Piece(PImage picture, int x, int y, int pHeight)
     int pieceX = this.x + 3*(cellWidth/2);
     int pieceY = this.y + (cellHeight/2);
-    pieceTest = new Piece(loadImage("Images//Torre.png"), pieceX, pieceY, cellHeight);
+    pieceTest = new Piece(loadImage("Images//B_Rook.png"), pieceX, pieceY, cellHeight);
   }
 
 
